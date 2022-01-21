@@ -17,6 +17,11 @@ body {
   color: #444444;
 }
 
+main {
+    background-image: url("../img/Background.jpg");
+    background-size: 100%;
+}
+
 a {
   color: #4154f1;
   text-decoration: none;
@@ -30,6 +35,111 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
 }
+
+
+
+/* teste nav ------------------------------------------------ */
+
+
+#cabeca {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 22px;
+  overflow-y: auto;
+  background-color: #b50edf;
+}
+@media (max-width: 992px) {
+  #cabeca {
+    width: 300px;
+    background: none;
+    border-right: 1px solid #0aff02;
+    left: -300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #main {
+    margin-left: 100px;
+  }
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+
+.bgnav{
+}
+
+.nave-menu {
+  padding: 0;
+  display: block;
+}
+.nave-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nave-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+.nave-menu a, .nave-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #00eb27;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #0054fd;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.nave-menu a i, .nave-menu a:focus i {
+  font-size: 20px;
+}
+.nave-menu a span, .nave-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: #04ff19;
+}
+@media (min-width: 992px) {
+  .nave-menu a, .nave-menu a:focus {
+    width: 56px;
+  }
+  .nave-menu a span, .nave-menu a:focus span {
+    display: none;
+    color: rgb(255, 0, 0);
+  }
+}
+.nave-menu a:hover, .nave-menu .active, .nave-menu .active:focus, .nave-menu li:hover > a {
+  color: rgb(250, 0, 0);
+  background: #ff0000;
+}
+.nave-menu a:hover span, .nave-menu .active span, .nave-menu .active:focus span, .nave-menu li:hover > a span {
+  color: rgb(255, 0, 0);
+}
+.nave-menu a:hover, .nave-menu li:hover > a {
+  width: 100%;
+  color: rgb(255, 0, 0);
+}
+.nave-menu a:hover span, .nave-menu li:hover > a span {
+  display: block;
+}
+
+
+/*end test nav */
+
+
+
 
 /*--------------------------------------------------------------
 # Sections
@@ -459,7 +569,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  background-color: #f6f9ff;
+  background-color: #4153f100; /* cor do quadrado azul claro do texto*/
   padding: 40px;
 }
 .about h3 {
@@ -504,9 +614,13 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+.box {
+  background-color: #7a2f2f;
+}
+
 .values .box {
   padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 5px rgb(112, 1, 1);
   text-align: center;
   transition: 0.3s;
   height: 100%;
@@ -522,8 +636,10 @@ section {
   font-weight: 700;
   margin-bottom: 18px;
 }
+
+/* shadow quando passa o mouse*/
 .values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 30px rgb(1, 42, 112); 
 }
 .values .box:hover img {
   transform: scale(1);
@@ -541,7 +657,7 @@ section {
   padding: 30px;
   width: 100%;
   background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 30px rgb(245, 7, 7);
 }
 .counts .count-box i {
   font-size: 42px;
@@ -885,23 +1001,30 @@ section {
 .faq .accordion-collapse {
   border: 0;
 }
+
+.faqbg {
+  background-color: #4154f1;
+}
+
+/*cor da fonte*/
 .faq .accordion-button {
   padding: 15px 15px 20px 0;
   font-weight: 600;
   border: 0;
   font-size: 18px;
-  color: #444444;
+  color: #fc0000;
   text-align: left;
 }
 .faq .accordion-button:focus {
   box-shadow: none;
 }
 .faq .accordion-button:not(.collapsed) {
-  background: none;
-  color: #4154f1;
+  background-color: #4154f1;
+  color: #f14141;
   border-bottom: 0;
 }
 .faq .accordion-body {
+  background-color: #4154f1;
   padding: 0 0 25px 0;
   border: 0;
 }
@@ -943,11 +1066,11 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.75);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.75);
   position: absolute;
   left: 30px;
   right: 30px;
