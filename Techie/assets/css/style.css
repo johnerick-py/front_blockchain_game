@@ -134,7 +134,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 70px;
+  max-width: 250px;
 }
 
 
@@ -509,7 +510,7 @@ section {
 --------------------------------------------------------------*/
 #about {
  /*  background-color: #000000; */
-  background-image: url("../img/cimabg.png");
+  background-image: url("../img/whitemiddle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
@@ -697,7 +698,7 @@ section#about p {
 # Features
 --------------------------------------------------------------*/
 #features {
-  background-image: url("../img/baixobg.png");
+  background-image: url("../img/castlewrld.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -743,9 +744,16 @@ section#about p {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+#bg2{
+  background-image: url("../img/florestwrld.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 #testimonials {
-  background-image: url("../img/cimabg.png");
+  background-image: url("../img/whitemiddle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -997,7 +1005,7 @@ section#about p {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background-image: url("../img/baixobg.png");
+  background-image: url("../img/trainwrld.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
