@@ -362,9 +362,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Init Section
 --------------------------------------------------------------*/
-#hero {
+#init {
   
   height: 100vh;
   background-image: url("../img/Top.png");
@@ -372,22 +372,22 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center; 
 }
-#hero .container, #hero .container-fluid {
+#init .container, #init .container-fluid {
   padding-top: 84px;
 }
-#hero h1 {
+#init h1 {
   margin: 0;
   font-size: 70px;
   font-weight: 700;
   line-height: 64px;
   color: #fff;
 }
-#hero h2 {
+#init h2 {
   color: rgba(255, 255, 255, 0.644);
   margin: 10px 0 0 0;
   font-size: 25px;
 }
-#hero .btn-get-started {
+#init .btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -400,56 +400,56 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border: 3px solid #fff;
 }
-#hero .btn-get-started:hover {
+#init .btn-get-started:hover {
   background: #fff;
   color: #f94646;
 }
-#hero .animated {
+#init .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 @media (min-width: 1200px) {
-  #hero {
+  #init {
     background-attachment: static;
   }
 }
 @media (max-width: 991px) {
-  #hero {
+  #init {
     text-align: center;
   }
-  #hero .container, #hero .container-fluid {
+  #init .container, #init .container-fluid {
     padding-top: 68px;
   }
-  #hero .animated {
+  #init .animated {
     -webkit-animation: none;
     animation: none;
   }
-  #hero .hero-img {
+  #init .init-img {
     text-align: center;
   }
-  #hero .hero-img img {
+  #init .init-img img {
     width: 50%;
   }
 }
 @media (max-width: 768px) {
-  #hero h1 {
+  #init h1 {
     font-size: 26px;
     line-height: 36px;
   }
-  #hero h2 {
+  #init h2 {
     font-size: 18px;
     line-height: 24px;
   }
-  #hero .hero-img img {
+  #init .init-img img {
     width: 60%;
   }
 }
 @media (max-width: 575px) {
-  #hero .hero-img img {
+  #init .init-img img {
     width: 80%;
   }
 }
 @media (max-width: 575px), (max-height: 600px) {
-  #hero {
+  #init {
     height: auto;
   }
 }
@@ -497,7 +497,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #5846f9;
+  /* background: #59548300; */
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -567,26 +567,6 @@ section#about p {
   top: 12px;
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
-  padding: 80px 0 60px 0;
-}
-.counts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #fff;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.counts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
-}
 
 /*--------------------------------------------------------------
 # Services
@@ -697,8 +677,9 @@ section#about p {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-#features {
-  background-image: url("../img/castlewrld.png");
+#social_media {
+  height: 100vh;
+  background-image: url("../img/castlewrld.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -713,27 +694,27 @@ section#about p {
   color: rgb(0, 0, 0);
 }
 
-/* section#features p {
+/* section#social_media p {
   font-size: 20px;
 } */
 
-.features .icon-box h4 {
+.social_media .icon-box h4 {
   color: rgb(247, 247, 247);
   font-size: 30px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
 }
-.features .icon-box i {
+.social_media .icon-box i {
   font-size: 40px;
   float: left;
   color: #ffffff;
 }
-.features .icon-box p {
+.social_media .icon-box p {
   font-size: 30px;
   color: #000000;
   margin-left: 100px;
 }
-.features .image {
+.social_media .image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -745,6 +726,7 @@ section#about p {
 # Testimonials
 --------------------------------------------------------------*/
 #bg2{
+  height: 100vh;
   background-image: url("../img/florestwrld.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -753,6 +735,7 @@ section#about p {
 
 
 #testimonials {
+  height: 100vh;
   background-image: url("../img/whitemiddle.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1005,6 +988,7 @@ section#about p {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
+  height: 100vh;
   background-image: url("../img/trainwrld.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1014,7 +998,7 @@ section#about p {
   color: rgb(255, 255, 255);
 }
 .faq .section-title h2::after {
-  background: rgba(255, 255, 255, 0.6);
+  /* background: rgba(255, 255, 255, 0.6); */
 }
 .faq .faq-list {
   padding: 0 100px;
@@ -1186,25 +1170,25 @@ section#about p {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: rgba(123, 39, 216, 0.8);
+ /*  background: rgba(216, 39, 39, 0.8); */
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #5846f9;
-}
-#footer .copyright-wrap {
-  border-top: 1px solid #8577fb;
-}
+/* #footer .footer-newsletter form input[type=submit]:hover {
+  background: #f94646;
+} */
+/* #footer .copyright-wrap {
+  border-top: 1px solid #fb7777;
+} */
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
   color: #fff;
 }
 #footer .credits a {
-  color: #fff;
+  color: rgb(58, 43, 126);
 }
 #footer .social-links a {
   font-size: 18px;
