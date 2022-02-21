@@ -411,8 +411,6 @@ h6 {
   padding-top: 20px;
 }
 
-
-
 #init {
   height: 100vh;
   background-image: url("../img/bg/top.jpg");
@@ -475,7 +473,6 @@ h6 {
     animation: none;
   }
   #init .init-img {
-    
     text-align: center;
   }
   #init .init-img img {
@@ -635,7 +632,6 @@ section#about p {
 # Services
 --------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -695,27 +691,43 @@ section#about p {
   background-position: center;
 }
 
+#nft {
+  height: 100vh;
+  background-image: url("../img/bg/cards.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+@media (max-width: 991px) {
+  #nft {
+    height: 100%;
+    background-image: url("../img/bg/cards.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 
 /* end DEVS*/
 
-#testimonials {
-  height:100%;
+#maps {
+  height: 100%;
   background-image: url("../img/bg/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
+.maps .maps-carousel,
+.maps .maps-slider {
   overflow: hidden;
 }
-.testimonials .testimonial-item {
+.maps .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
 }
-.testimonials .testimonial-item .testimonial-img {
+.maps .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
   margin: -40px 0 0 40px;
@@ -724,30 +736,30 @@ section#about p {
   border: 6px solid #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.testimonials .testimonial-item h3 {
+.maps .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
   color: #2c4964;
 }
-.testimonials .testimonial-item h4 {
+.maps .testimonial-item h4 {
   font-size: 14px;
   color: rgb(255, 16, 16);
   margin: 0 0 0 45px;
 }
 
 /*cor das virgulas*/
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.maps .testimonial-item .quote-icon-left,
+.maps .testimonial-item .quote-icon-right {
   color: #ffffff;
   font-size: 26px;
 }
-.testimonials .testimonial-item .quote-icon-left {
+.maps .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
-.testimonials .testimonial-item .quote-icon-right {
+.maps .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -755,7 +767,7 @@ section#about p {
 }
 
 /* cor do fundo road-map*/
-.testimonials .testimonial-item p {
+.maps .testimonial-item p {
   color: #fff;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
@@ -766,22 +778,22 @@ section#about p {
   z-index: 1;
   box-shadow: 0 0px 20px 0 rgba(252, 3, 3, 0.842);
 }
-.testimonials .swiper-pagination {
+.maps .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.maps .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #5846f9;
 }
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.maps .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #5846f9;
 }
 @media (max-width: 767px) {
-  .testimonials {
+  .maps {
     margin: 30px 10px;
   }
 }
