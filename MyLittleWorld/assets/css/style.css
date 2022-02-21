@@ -982,9 +982,9 @@ section#about p {
 .faq .section-title p {
   color: rgb(255, 255, 255);
 }
-.faq .section-title h2::after {
+/* .faq .section-title h2::after { */
   /* background: rgba(255, 255, 255, 0.6); */
-}
+/* } */
 .faq .faq-list {
   padding: 0 100px;
 }
